@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", sans-serif;
+  
+  --color-primary: #0d93f2;
+  --color-accent: #39ff14;
+  --color-background-dark: #0a0f14;
+  --color-brand-purple: #2d1b4e;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0a0f14] text-slate-100 antialiased;
+  }
+}
+
+.grid-bg {
+  background-image: linear-gradient(to right, rgba(13, 147, 242, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(13, 147, 242, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.glow-effect {
+  box-shadow: 0 0 20px rgba(13, 147, 242, 0.4);
+}
+
+.neon-glow {
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+}
+
+.flow-line {
+  background: linear-gradient(90deg, transparent, #0d93f2, transparent);
+}
